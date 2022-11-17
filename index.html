@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get An Intervention</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="./scripts/index.js"></script>
+</head>
+
+<body>
+  <div class="modal js-modal">
+    <div class="modal__content js-modal-content">
+    </div>
+  </div>
+  <header class="header">
+    <div class="container">
+      <div class="header__top">
+        <div class="header__logo">
+          <a href="/" class="header__logo-link">
+            <span class="logo"></span>
+          </a>
+        </div>
+        <div class="header__menu js-mobile-menu">
+          <nav class="header__nav">
+            <ul class="header__navList navlist">
+              <li class="navlist__item"><a href="" class="navlist__link navlist__link_active">Home</a></li>
+              <li class="navlist__item"><a href="" class="navlist__link">About</a></li>
+              <li class="navlist__item"><a href="" class="navlist__link">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="header__contacts contacts">
+            <div class="contacts__text">call now for a consult</div>
+            <a class="contacts__tel" href="tel:+1234567890">123.456.7890</a>
+          </div>
+        </div>
+        <button class="header__burger burger js-burger" aria-label="nav menu control" aria-expanded="false">
+          <span class="burger__line burger__line_main"></span>
+          <span class="burger__line burger__line_cross"></span>
+        </button>
+      </div>
+      <section class="hero">
+        <div class="hero__text-content">
+          <h1 class="hero__title main-title">
+            <span class="main-title__text main-title__text_transparent text-transparent text-transparent_white">get
+              an</span>
+            <span class="main-title__text">intervention</span>
+          </h1>
+          <p class="hero__desc">Showing greater respect to older adults can be done in several ways : 
+            acknowledging and putting to use the talents and skills of older adults; creating 
+            intergenerational initiatives; and allowing older adults to stay active and independent 
+            for as long as possible.
+          </p>
+        </div>
+        <form class="hero__form form js-form">
+          <h3 class="form__title">Contact Us</h3>
+          <div class="form__inputs">
+            <div class="form__text-input text-input">
+              <input name="First Name" type="text" class="text-input__input js-input" placeholder="First Name">
+              <label class="form__label text-input__label label">First Name</label>
+              <span class="text-input__fake-input fake-input">
+                <span class="fake-input__span fake-input__span_start"></span>
+                <span class="fake-input__span fake-input__span_middle">
+                  <span class="fake-input__label">First Name</span></span>
+                <span class="fake-input__span fake-input__span_end"></span>
+              </span>
+              <span class="tooltip error-tooltip">
+                This field can't be empty. Please fill it in.
+              </span>
+            </div>
+            <div class="form__text-input text-input">
+              <input name="Last Name" type="text" class="text-input__input js-input" placeholder="Last Name">
+              <label class="form__label text-input__label label">Last Name</label>
+              <span class="text-input__fake-input fake-input">
+                <span class="fake-input__span fake-input__span_start"></span>
+                <span class="fake-input__span fake-input__span_middle">
+                  <span class="fake-input__label">Last Name</span></span>
+                <span class="fake-input__span fake-input__span_end"></span>
+              </span>
+              <span class="tooltip error-tooltip">
+                This field can't be empty. Please fill it in.
+              </span>
+            </div>
+            <div class="form__text-input text-input">
+              <input name="Business Email" type="text" class="text-input__input js-input" placeholder="Business Email">
+              <label class="form__label text-input__label label">Business Email</label>
+              <span class="text-input__fake-input fake-input">
+                <span class="fake-input__span fake-input__span_start"></span>
+                <span class="fake-input__span fake-input__span_middle">
+                  <span class="fake-input__label">Business Email</span></span>
+                <span class="fake-input__span fake-input__span_end"></span>
+              </span>
+              <span class="tooltip error-tooltip">
+                This field can't be empty. Please fill it in.
+              </span>
+            </div>
+            <div class="form__text-input text-input">
+              <input name="Company" type="text" class="text-input__input js-input" placeholder="Company">
+              <label class="form__label text-input__label label">Company</label>
+              <span class="text-input__fake-input fake-input">
+                <span class="fake-input__span fake-input__span_start"></span>
+                <span class="fake-input__span fake-input__span_middle">
+                  <span class="fake-input__label">Company</span></span>
+                <span class="fake-input__span fake-input__span_end"></span>
+              </span>
+              <span class="tooltip error-tooltip">
+                This field can't be empty. Please fill it in.
+              </span>
+            </div>
+            <div class="form__select select">
+              <select name="Country" id="select" class="select__select notoched js-select">
+                <option value="" class="select__option"></option>
+                <option value="United States" class="select__option">United States</option>
+                <option value="Canada" class="select__option">Canada</option>
+                <option value="Chile" class="select__option">Chile</option>
+                <option value="Dominican Republic" class="select__option">Dominican Republic</option>
+                <option value="France" class="select__option">France</option>
+              </select>
+              <label class="select__label form__label label" for="select">Country</label>
+              <span class="text-input__fake-input fake-input fake-input_select">
+                <span class="fake-input__span fake-input__span_start fake-input__span_select"></span>
+                <span class="fake-input__span fake-input__span_middle fake-input__span_select">
+                  <span class="fake-input__label">Company</span></span>
+                  <span class="fake-input__span fake-input__span_end fake-input__span_select"></span>
+                </span>
+                <span class="tooltip error-tooltip">
+                  This field can't be empty. Please fill it in.
+                </span>
+            </div>
+          </div>
+          <button type="submit" class="form__submit submit-btn js-submit-el">
+            <span class="icon submit-btn__icon"></span>
+            <span class="submit-btn__text">Submit</span>
+          </button>
+        </form>
+      </section>
+    </div>
+  </header>
+  <main class="main">
+    <section class="understand">
+      <div class="container">
+        <div class="understand__image-block">
+          <picture>
+            <source
+              media="(max-width: 1039px)"
+              srcset="./assets/img/understand/un0-at-1-small.jpg 1x, ./assets/img/understand/un0-at-2-small.jpg 2x"
+            >
+            <source
+              srcset="./assets/img/understand/un0-at-1.jpg 1x, ./assets/img/understand/un0-at-2.jpg 2x"
+            >
+            <img class="understand__img" src="./assets/img/understand/un0-at-1.jpg" alt="a couple in a forest">
+          </picture>
+          <picture>
+            <source
+              media="(max-width: 1039px)"
+              srcset="./assets/img/understand/un1-at-1-small.jpg 1x, ./assets/img/understand/un1-at-2-small.jpg 2x"
+            >
+            <source
+              srcset="./assets/img/understand/un1-at-1.jpg 1x, ./assets/img/understand/un1-at-2.jpg 2x"
+            >
+            <img class="understand__img" src="./assets/img/understand/un0-at-1.jpg" alt="a couple in a forest">
+          </picture>
+          <picture>
+            <source
+              media="(max-width: 1039px)"
+              srcset="./assets/img/understand/un2-at-2-small.jpg 1x, ./assets/img/understand/un2-at-2-small.jpg 2x"
+            >
+            <source
+              srcset="./assets/img/understand/un2-at-1.jpg 1x, ./assets/img/understand/un2-at-2.jpg 2x"
+            >
+            <img class="understand__img" src="./assets/img/understand/un2-at-1.jpg" alt="a couple in a forest">
+          </picture>
+        </div>
+        <h2 class="understand__title section-title">
+          <span class="section-title__text section-title__text_transparent text-transparent">we</span>
+          <span class="section-title__text">understand</span>
+        </h2>
+        <div class="understand__desc">
+          <p class="paragraph understand__paragraph">Older adults want to play active and meaningful roles in their
+            lives, including as part of a social
+            network, a neighborhood, and a community. Service providers and policymakers must consider that a lack of
+            sense of purpose can become problematic as people age. Engaging them in leisure activities and volunteer
+            work is important.
+          </p>
+          <p class="paragraph understand__paragraph">Older adults want to stay active and contribute to society in a
+            reciprocal manner (meaning that they want
+            to exchange their services and skills with others for the mutual benefit of the neighborhood or
+            community). Qualitative and quantitative studies published from 2005 to 2016 examining the social needs of
+            older adults were eligible for inclusion.
+          </p>
+          <p class="paragraph understand__paragraph">To stimulate social contacts, neighborhood initiatives can be
+            developed. Social meeting places, such as
+            pubs and churches can help to foster the development of close and peripheral relationships.
+            <a href="/" class="understand__link link-outlined" target="_blank" rel="noopener noreferrer">
+              <span class="link-outlined__text">92% Success Rate</span>
+            </a>
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="slider">
+      <h2 class="testemonials hidden">testemonials</h2>
+      <div class="container container_slider">
+        <div class="slider__slider">
+          <div class="slider__slides slides">
+            <button class="slider__btn slider__btn_left js-slide-left" aria-label="previous slide"></button>
+            <ul class="slides__list js-slider" data-show="0">
+              <li class="slides__item slide">
+                <img class="slide__img" src="./assets/img/slides/1-at-1.jpg"
+                  srcset="./assets/img/slides/1-at-1.jpg 1x, ./assets/img/slides/1-at-2.jpg 2x" alt="Abbie Harvey">
+                <article class="slide__content">
+                  <h3 class="slide__title">Abbie Harvey</h3>
+                  <p class="slide__text">
+                    I have been caring for my mom & dad off and on for about 10 years now, and I know the importance of
+                    me
+                    being there for appointments. Older people need attention, love and care that they truly deserve.
+                  </p>
+                </article>
+              </li>
+              <li class="slides__item slide">
+                <img class="slide__img" src="./assets/img/slides/2-at-1.jpg"
+                  srcset="./assets/img/slides/2-at-1.jpg 1x, ./assets/img/slides/2-at-2.jpg 2x" alt="Abbie Harvey">
+                <article class="slide__content">
+                  <h3 class="slide__title">Abbie Harvey</h3>
+                  <p class="slide__text">
+                    I have been caring for my mom & dad off and on for about 10 years now, and I know the importance of
+                    me
+                    being there for appointments. Older people need attention, love and care that they truly deserve.
+                  </p>
+                </article>
+              </li>
+              <li class="slides__item slide">
+                <img class="slide__img" src="./assets/img/slides/3-at-1.jpg"
+                  srcset="./assets/img/slides/3-at-1.jpg 1x, ./assets/img/slides/3-at-2.jpg 2x" alt="Abbie Harvey">
+                <article class="slide__content">
+                  <h3 class="slide__title">Abbie Harvey</h3>
+                  <p class="slide__text">
+                    I have been caring for my mom & dad off and on for about 10 years now, and I know the importance of
+                    me
+                    being there for appointments. Older people need attention, love and care that they truly deserve.
+                  </p>
+                </article>
+              </li>
+            </ul>
+            <button class="slider__btn slider__btn_right js-slide-right" aria-label="next slide"></button>
+          </div>
+          <div class="slider__bullets">
+            <button type="button" class="bullet bullet_active js-bullet-1" aria-label="show 1 slide"></button>
+            <button type="button" class="bullet js-bullet-2" aria-label="show 2 slide"></button>
+            <button type="button" class="bullet js-bullet-3" aria-label="show 3 slide"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="organize">
+      <div class="container">
+        <h2 class="organize__title section-title">
+          <span class="section-title__text section-title__text_transparent text-transparent">we</span>
+          <span class="section-title__text">can organize everything</span>
+        </h2>
+        <div class="organaize__text-content">
+          <p class="paragraph organize__paragraph paragraph_italic">
+            <span class="paragraph_bold">Interventions</span>should focus on older adult's desire for connectedness,
+            participation and independence.
+          </p>
+          <p class="paragraph organize__paragraph">
+            Loneliness and social isolation are growing public health concerns in our aging society. Whilst these
+            experiences occur across the life span, 50% of individuals aged over 60 are at risk of social isolation and
+            one-third will experience some degree of loneliness later in life. It is vital to reduce loneliness and
+            social
+            isolation among older adults.
+          </p>
+          <p class="paragraph organize__paragraph">
+            The methodology framework proposed by Asked and O'Malley and further developed by Levac, et al. was used to
+            guide the scoping review process. A total of 33 reviews met the inclusion criteria, evaluating a range of
+            interventions targeted at older people residing in the community or institutionalised settings.
+          </p>
+        </div>
+        <ul class="organize__list">
+          <li class="organize__item organize__item_tooltiped organize-item">
+            <span class="organize-item__text">Needs Assessment</span>
+            <div class="organize__tooltip tooltip">
+              We're experienced in our individual crafts and understand how each one of our roles impacts your plan
+              holistically.
+            </div>
+          </li>
+          <li class="organize__item organize__item_tooltiped organize-item">
+            <span class="organize-item__text">Treatment Planning & Placement</span>
+            <div class="organize__tooltip tooltip">
+              We're experienced in our individual crafts and understand how each one of our roles impacts your plan
+              holistically.
+            </div>
+          </li>
+          <li class="organize__item organize__item_tooltiped organize-item">
+            <span class="organize-item__text">Transportation & Logistics</span>
+            <div class="organize__tooltip tooltip">
+              We're experienced in our individual crafts and understand how each one of our roles impacts your plan
+              holistically.
+            </div>
+          </li>
+          <li class="organize__item organize__item_tooltiped organize-item">
+            <span class="organize-item__text">Insurance Advocacy</span>
+            <div class="organize__tooltip tooltip">
+              We're experienced in our individual crafts and understand how each one of our roles impacts your plan
+              holistically.
+            </div>
+          </li>
+          <li class="organize__item organize__item_tooltiped organize-item">
+            <span class="organize-item__text">Employment Advocacy</span>
+            <div class="organize__tooltip tooltip">
+              We're experienced in our individual crafts and understand how each one of our roles impacts your plan
+              holistically.
+            </div>
+          </li>
+          <li class="organize__item organize__item_tooltiped organize-item">
+            <span class="organize-item__text">Aftercare Planning</span>
+            <div class="organize__tooltip tooltip">
+              We're experienced in our individual crafts and understand how each one of our roles impacts your plan
+              holistically.
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="video">
+      <div class="container container_video">
+        <div class="video__content">
+          <span class="logo video__logo"></span>
+          <div class="video__text-content">
+            <h2 class="video__title">
+              <span class="text-transparent text-transparent_white">Watch</span>
+              <span class="video__title-text">The Video</span>
+            </h2>
+            <ul class="video__list">
+              <li class="video__item video-item">
+                <h3 class="video-item__title">Needs Assessment</h3>
+                <p class="video-item__paragraph">
+                  The Advocacy Evaluation Toolkit contains the instruments used to collect data for evaluating the
+                  Consumer
+                  Voices for Coverage program.
+                </p>
+              </li>
+              <li class="video__item video-item">
+                <h3 class="video-item__title">Insurance Advocacy</h3>
+                <p class="video-item__paragraph">
+                  We are committed to advocating for appropriate coverage and payment policies.
+                </p>
+              </li>
+              <li class="video__item video-item">
+                <h3 class="video-item__title">Treatment Planning & Placement</h3>
+                <p class="video-item__paragraph">
+                  Patients can better understand medical procedures, discharge instructions, etc.
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="video__button video-button">
+            <button class="video-button__button js-video-btn" aria-label="Press to play video"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <div class="copy">@2021 Get an Intervention Inc. All rights reserved.</div>
+        <nav class="footer__nav">
+          <ul class="footer__navlist">
+            <li class="footer__item"><a href="/?" class="footer__link">Privacy Policy</a></li>
+            <li class="footer__item"><a href="/?" class="footer__link">Terms of use</a></li>
+            <li class="footer__item"><a href="/?" class="footer__link">Site Map</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
